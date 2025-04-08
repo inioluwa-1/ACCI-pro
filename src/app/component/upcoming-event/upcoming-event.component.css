@@ -1,0 +1,98 @@
+p {
+    font-size: 1.2rem;
+}
+.hero {
+    position: relative;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.initiative-section {
+            margin-bottom: 2rem;
+        }
+        
+        .light-blue-bg {
+            background-color: #E6F0F9;
+        }
+        
+        .initiative-content {
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+        
+        .initiative-content h2 {
+            color: #2B4F81;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+        
+        .initiative-content p {
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        .initiative-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            padding: 0;
+        }
+        
+        .btn-register {
+            background-color: #FDD835;
+            color: white;
+            border: none;
+            padding: 0.6rem 2rem;
+            font-weight: 600;
+            display: inline-block;
+            transition: all 0.3s ease;
+            width: fit-content;
+        }
+        
+        .btn-register:hover {
+            background-color: #F9C100;
+            color: white;
+
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .no-padding {
+            padding: 0;
+}
+        
+@media (max-width: 800px) {
+            .initiative-content {
+                padding: 2rem;
+            }
+}
