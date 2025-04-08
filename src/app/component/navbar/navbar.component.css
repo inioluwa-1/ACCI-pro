@@ -16,13 +16,7 @@
     margin-left: 50px;
     margin-right: 50px;
 }
-.move{
-    /* margin-left: 30px; */
-}
 @media screen and (max-width: 600px) {
-    .move{
-        margin-left: 0px;
-    }
     .con{
         margin-left: 0px;
         margin-right: 0px;

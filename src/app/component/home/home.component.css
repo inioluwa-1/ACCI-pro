@@ -291,35 +291,6 @@ p {
     border-radius: 10px;
 }
 
-/* .instagram-section {
-    margin-top: 40px;
-    text-align: center;
-    padding-bottom: 40px;
-}
-
-.instagram-section h3 {
-    font-size: 35px;
-    font-weight: bold;
-    color: #122643;
-    margin-bottom: 15px;
-}
-
-.instagram-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #FFC107;
-    border: 2px solid #FFC107;
-    border-radius: 10px;
-    text-decoration: none;
-}
-
-.instagram-btn:hover {
-    background-color: #FFC107;
-    color: #122643;
-} */
-
 @media (max-width: 768px) {
     .impact-section {
         width: 100%;
@@ -380,29 +351,13 @@ p {
         font-size: 14px;
     }
 }
-/* @media (max-width: 768px) {
-    .newsletter-grid {
-        flex-direction: column;
-        text-align: center;
+@media screen and (max-width: 768px) {
+    .partners-logos {
+        flex-direction: row;
+        align-items: center;
     }
 
-    .newsletter-grid div {
-        margin-bottom: 20px;
+    .partners-logos img {
+        max-width: 100px;
     }
-    .newsletter-form {
-        flex-direction: column;
-    }
-
-    .newsletter-form input,
-    .newsletter-form button {
-        margin-bottom: 10px;
-    }
-
-    .newsletter-form input {
-        width: 100%;
-    }
-
-    .newsletter-form button {
-        width: 100%;
-    }
-} */
+}
