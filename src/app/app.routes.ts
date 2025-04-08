@@ -5,6 +5,7 @@ import { KeyInitiativeComponent } from './component/key-initiative/key-initiativ
 import { UpcomingEventComponent } from './component/upcoming-event/upcoming-event.component';
 import { OngoingProgrammesComponent } from './component/ongoing-programmes/ongoing-programmes.component';
 import { VolunteerComponent } from './component/volunteer/volunteer.component';
+import { ContactComponent } from './component/contact/contact.component';
 
 export const routes: Routes = [
     {path: '', component: HomeComponent, title:'Home'},
@@ -13,4 +14,5 @@ export const routes: Routes = [
     {path: 'upcoming-event', component: UpcomingEventComponent, title:'Upcoming-Event'},
     {path: 'ongoing-programmes', component: OngoingProgrammesComponent, title:'Ongoing-Programmes'},
     {path: 'volunteer', component: VolunteerComponent, title:'Volunteer'},
+    {path: 'contact', component: ContactComponent, title:'Contact'},
 ];

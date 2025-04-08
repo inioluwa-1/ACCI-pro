@@ -116,3 +116,56 @@ p {
     max-width: 950px;
     margin: 0 auto;
 }
+.initiatives-section {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.initiatives-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.initiatives-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+.initiatives-content h2 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.initiatives-btn {
+    display: inline-block;
+    background-color: #FFC107;
+    color: white;
+    padding: 12px 24px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+}
+@media (max-width: 768px) {
+    .initiatives-section {
+        height: 200px;
+    }
+    .initiatives-content h2 {
+        font-size: 20px;
+    }
+    .initiatives-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
