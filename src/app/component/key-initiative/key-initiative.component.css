@@ -32,12 +32,16 @@ p {
     font-weight: bold;
 }
 
+.sid {
+    display: flex;
+    gap:  30px;
+}
 .date-label {
     display: inline-flex;
     align-items: center;
     font-family: Arial, sans-serif;
     color: #FFD700; 
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 500;
   }
 
@@ -55,7 +59,7 @@ p {
 
 .header h1 {
     font-weight: 600;
-    color: #333;
+    color: #1d3557;
     position: relative;
     display: inline-block;
 }
@@ -95,6 +99,7 @@ p {
     margin-bottom: 0.75rem;
     font-size: 1.1rem;
     color:  #1d3557;
+    margin-top: 15px;
 }
 
 .program-category {
@@ -167,5 +172,10 @@ p {
     .initiatives-btn {
         padding: 10px 20px;
         font-size: 14px;
+    }
+    .sid {
+        display: flex;
+        flex-direction: column;
+        gap:  30px;
     }
 }
