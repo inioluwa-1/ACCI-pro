@@ -1,0 +1,36 @@
+.bar{
+    background-color: #318FF3;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+.logo{
+    width: 250px;
+    margin-left: 80px;
+    margin-bottom: -70px;
+    margin-top: -80px;
+}
+.con{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.move{
+    margin-left: 580px;
+}
+@media screen and (max-width: 600px) {
+    .move{
+        margin-left: 0px;
+    }
+    .con{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .logo{
+        margin-left: -20px;
+        width: 150px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+}

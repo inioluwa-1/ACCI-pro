@@ -1,0 +1,409 @@
+p {
+    font-size: 1.2rem;
+}
+.hero {
+    position: relative;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero .btn {
+    background-color: #FFC107;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background-color: gold;
+}
+.impact-section {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    /* gap: 20px; */
+    justify-content: space-evenly;
+    padding: 40px;
+}
+
+.impact-text {
+    width: 50%;
+}
+
+.impact-heading {
+    font-weight: bold;
+    color: #1d3557;
+    position: relative;
+    display: inline-block;
+    padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.impact-heading::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    width: 20%;
+    height: 5px;
+    background: #FFC107;
+}
+
+.impact-img {
+    flex: 1;
+    max-width: 400px;
+    border-radius: 10px;
+}
+.focus-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 78%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 50px 0;
+}
+
+.focus-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 60%;
+}
+
+.focus-card {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    height: 250px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: semibold;
+    overflow: hidden;
+}
+
+.focus-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.focus-card div {
+    position: relative;
+    z-index: 1;
+}
+
+.focus-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.focus-text {
+    margin-top: 8px;
+}
+
+.focus-info {
+    width: 35%;
+}
+
+.focus-info h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #1d3557;
+    position: relative;
+    display: inline-block;
+    padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.focus-info h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    width: 30%;
+    height: 5px;
+    background: #FFC107;
+}
+.partners-section {
+    /* display: flex; */
+   
+    align-items: center;
+    justify-content: center;
+    background-color: #318FF3;
+    max-width: 100%;
+}
+.partners-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+    position: relative;
+    text-align: center;
+    padding-top: 15px;
+    /* align-items: center; */
+}
+
+.partners-logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.partners-logos img {
+    max-width: 200px;
+    height: auto;
+}
+
+.volunteer-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #318FF3;
+    color: #1d3557;
+    margin: auto;
+    padding-bottom: 60px;
+}
+
+.volunteer-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 78%;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+}
+.volunteer-content {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.volunteer-content h3 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #1d3557;
+    margin-bottom: 10px;
+}
+
+.volunteer-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.volunteer-btn {
+    background-color: #FFC107;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.volunteer-image img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.initiatives-section {
+    background: url('https://www.biffa.co.uk/-/media/project/biffa-sites/biffa/images/stock/sustainable-forest.jpg?cx=0.5&ch=640&cy=0.5&cw=1920&hash=06D17076E6033745EBBAEA2DFD30FE1F') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.initiatives-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.initiatives-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+.initiatives-content h2 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.initiatives-btn {
+    display: inline-block;
+    background-color: #FFC107;
+    color: white;
+    padding: 12px 24px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* .instagram-section {
+    margin-top: 40px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.instagram-section h3 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #122643;
+    margin-bottom: 15px;
+}
+
+.instagram-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFC107;
+    border: 2px solid #FFC107;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.instagram-btn:hover {
+    background-color: #FFC107;
+    color: #122643;
+} */
+
+@media (max-width: 768px) {
+    .impact-section {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .impact-heading::before {
+        /* display: none;  */
+        width: 20%;
+    }
+    .impact-text, .impact-img {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .focus-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .focus-grid {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .focus-info {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .volunteer-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .volunteer-grid {
+        flex-direction: column;
+    }
+    .volunteer-content {
+        text-align: center;
+    }
+
+    .volunteer-image img {
+        max-width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .initiatives-section {
+        height: 200px;
+    }
+    .initiatives-content h2 {
+        font-size: 20px;
+    }
+    .initiatives-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+/* @media (max-width: 768px) {
+    .newsletter-grid {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .newsletter-grid div {
+        margin-bottom: 20px;
+    }
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-form input,
+    .newsletter-form button {
+        margin-bottom: 10px;
+    }
+
+    .newsletter-form input {
+        width: 100%;
+    }
+
+    .newsletter-form button {
+        width: 100%;
+    }
+} */

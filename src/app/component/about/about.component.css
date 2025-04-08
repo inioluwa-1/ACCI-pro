@@ -1,0 +1,160 @@
+p {
+  font-size: 1.2rem;
+}
+.hero {
+    position: relative;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    
+}
+
+.impact-section {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  /* gap: 20px; */
+  justify-content: space-evenly;
+  padding: 40px;
+}
+
+.impact-text {
+  width: 50%;
+}
+
+.impact-heading {
+  font-weight: bold;
+  color: #1d3557;
+  position: relative;
+  display: inline-block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.impact-heading::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  width: 10%;
+  height: 5px;
+  background: #FFC107;
+}
+
+.impact-img {
+  flex: 1;
+  max-width: 600px;
+  border-radius: 10px;
+}
+.mission-vision-values {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 40px;
+  background-color: #318FF3;
+  color: white;
+}
+.mvv-img {
+  flex: 1;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+}
+.mvv-text {
+  width: 50%;
+}
+.mvv-title {
+  font-weight: bold;
+  color: white;
+  position: relative;
+  display: inline-block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.mvv-title {
+  font-weight: bold;
+  color: white;
+  position: relative;
+  display: inline-block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.objectives-section {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  /* gap: 20px; */
+  justify-content: space-evenly;
+  padding: 40px;
+}
+
+.objectives-text {
+  width: 50%;
+}
+
+.objective-img {
+  flex: 1;
+  max-width: 600px;
+  border-radius: 10px;
+}
+.objectives-heading {
+  font-weight: bold;
+  color: #1d3557;
+  position: relative;
+  display: inline-block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+@media (max-width: 768px) {
+  .impact-section {
+      width: 100%;
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  .impact-heading::before {
+      /* display: none;  */
+      width: 20%;
+  }
+  .impact-text, .impact-img {
+      width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mission-vision-values {
+      flex-direction: column;
+      text-align: center;
+  }
+  .mvv-text, .mvv-img {
+      width: 100%;
+  }
+}
