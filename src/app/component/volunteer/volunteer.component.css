@@ -1,0 +1,94 @@
+p {
+    font-size: 1.29rem;
+}
+.hero {
+    position: relative;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-section {
+    background-color: white;
+    padding: 40px 20px;
+}
+
+.why-volunteer {
+    background-color: #e9f2fb;
+    padding: 30px 20px;
+}
+
+.volunteer-section {
+    background-color: white;
+    padding: 30px 20px;
+}
+
+.opportunities {
+    margin-top: 40px;
+}
+
+h2 {
+    color: #2c5282;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.volunteer-section h2 {
+    text-align: left;
+}
+
+.opportunities h2 {
+    text-align: left;
+}
+
+.image-container {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.content-text {
+    text-align: left;
+    font-size: 1.29rem;
+}
+
+.list-item {
+    text-align: left;
+    padding-right: 20px;
+    position: relative;
+}
+
+.more-text {
+    text-align: left;
+    /* margin-top: 20px; */
+    font-size: 1.29rem;
+    font-style: italic;
+}
+.accr {
+    text-align: left;
+    font-size: 1.29rem;
+}

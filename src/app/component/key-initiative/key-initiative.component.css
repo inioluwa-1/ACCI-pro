@@ -95,9 +95,9 @@ p {
 }
 
 .program-card .card-title {
-    font-weight: 600;
+    font-weight: bold;
     margin-bottom: 0.75rem;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     color:  #1d3557;
     margin-top: 15px;
 }
@@ -111,7 +111,7 @@ p {
 }
 
 .program-description {
-    font-size: 1.0rem;
+    font-size: 1.2rem;
 }
 
 .main-container {
