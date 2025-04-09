@@ -9,4 +9,8 @@ import { RouterLink } from '@angular/router';
 })
 export class ContactComponent {
 
+  ngOnInit () {
+    window.scrollTo(0, 0);
+}
+
 }

@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class VolunteerComponent {
 
+  ngOnInit () {
+    window.scrollTo(0, 0);
+}
+
 }

@@ -2,24 +2,24 @@
     <div class="container-fluid container">
         <img src="ACCI-logo.png" alt="" class="logo">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon" data-bs-toggle="collapse" data-bs-target="#navbarScroll"></span>
         </button>
         <div class="collapse navbar-collapse move" id="navbarScroll">
             <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                 <li class="nav-item">
-                    <a class="nav-link active text-white fs-4 con" [routerLink]="['']">Home</a>
+                    <a class="nav-link active text-white fs-4 con" [routerLink]="['']" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Home</a>
                 </li>
         <li class="nav-item">
-            <a class="nav-link active text-white fs-4" [routerLink]="['/about']">About</a>
+            <a class="nav-link active text-white fs-4" [routerLink]="['/about']" data-bs-toggle="collapse" data-bs-target="#navbarScroll">About</a>
         </li>
         <li class="nav-item dropdown text-black">
             <a class="nav-link dropdown-toggle text-white con fs-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Impact
             </a>
             <ul class="dropdown-menu">
-                <li><a  [routerLink]="['/key-initiative']" class="dropdown-item">Key Initiatives</a></li>
-                <li><a  [routerLink]="['/upcoming-event']" class="dropdown-item">Upcoming Events</a></li>
-                <li><a  [routerLink]="['/ongoing-programmes']" class="dropdown-item">Ongoing Programmes</a></li>
+                <li><a  [routerLink]="['/key-initiative']" class="dropdown-item" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Key Initiatives</a></li>
+                <li><a  [routerLink]="['/upcoming-event']" class="dropdown-item" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Upcoming Events</a></li>
+                <li><a  [routerLink]="['/ongoing-programmes']" class="dropdown-item" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Ongoing Programmes</a></li>
             </ul>
         </li>
         <li class="nav-item dropdown">
@@ -27,13 +27,13 @@
             Join Us
             </a>
             <ul class="dropdown-menu">
-                <li><a [routerLink]="['/upcoming-event']" class="dropdown-item">Events</a></li>
-                <li><a [routerLink]="['/volunteer']" class="dropdown-item">Volunteer</a></li>
+                <li><a [routerLink]="['/upcoming-event']" class="dropdown-item" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Events</a></li>
+                <li><a [routerLink]="['/volunteer']" class="dropdown-item" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Volunteer</a></li>
                 <li><a href="https://forms.gle/Mn3yfCsBJ1jPJG4U7" target="_blank" rel="noopener noreferrer" class="dropdown-item">Fund a project</a></li>
             </ul>
         </li>
         <li class="nav-item con">
-            <a [routerLink]="['/contact']" class="nav-link text-white fs-4">Contact</a>
+            <a [routerLink]="['/contact']" class="nav-link text-white fs-4" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Contact</a>
         </li>
         </ul>
         <a href="https://www.paypal.com/donate/?hosted_button_id=QV7LPVZAA785U">
