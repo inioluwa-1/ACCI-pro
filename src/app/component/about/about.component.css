@@ -199,7 +199,7 @@ p {
 .staff-card img {
   padding: 40px;
   width: 100%;
-  height: auto;
+  height: 400px;
   border-radius: 20%;
   /* border-bottom: 1px solid #eee; */
 }
