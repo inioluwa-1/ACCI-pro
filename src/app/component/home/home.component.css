@@ -213,6 +213,7 @@ p {
     justify-content: space-evenly;
     max-width: 78%;
     margin: auto;
+    gap: 40px;
     background-color: white;
     border-radius: 10px;
 }
@@ -230,7 +231,7 @@ p {
 }
 
 .volunteer-content p {
-    font-size: 16px;
+    font-size: 1.25rem;
     line-height: 1.5;
     margin-bottom: 20px;
 }
@@ -250,6 +251,7 @@ p {
     max-width: 800px;
     height: auto;
     border-radius: 10px;
+    /* padding: 30px; */
 }
 
 .initiatives-section {
