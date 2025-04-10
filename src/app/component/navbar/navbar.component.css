@@ -8,13 +8,17 @@
 }
 .logo{
     width: 250px;
-    /* margin-left: 80px; */
+    margin-left: -80px;
     margin-bottom: -70px;
     margin-top: -80px;
 }
 .con{
     margin-left: 50px;
     margin-right: 50px;
+}
+.move {
+    padding-left: 100px;
+    /* margin-right: 100px; */
 }
 @media screen and (max-width: 800px) {
     .con{
