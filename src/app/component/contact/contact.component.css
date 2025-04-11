@@ -119,4 +119,22 @@
         padding: 10px 20px;
         font-size: 14px;
     }
+    section div p, section div, section div ul li {
+        font-size: .9rem;
+      }
+      section div h1, section div h2, section div h3 {
+        font-size: 1.5rem;
+      }
+      div h3, div h2, div h1 {
+        font-size: 1.5rem;
+      }
+      div p, div ul li {
+        font-size: .9rem;
+      }
+    .talk-text {
+        font-size: .9rem;
+      }
+      .talk-heading {
+        font-size: 1rem;
+      }
 }

@@ -205,7 +205,7 @@ p {
     justify-content: space-between;
     background-color: #318FF3;
     color: #1d3557;
-    margin: auto;
+    /* margin: auto; */
     padding-bottom: 60px;
 }
 
@@ -217,7 +217,7 @@ p {
     /* flex: 1; */
     text-align: left;
     padding: 10%;
-    width: 50%;
+    /* width: 50%; */
 }
 .volunteer-content2{
     text-align: left;
@@ -304,6 +304,10 @@ p {
         flex-direction: column;
         text-align: center;
     }
+    .hero h1 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
     section div p {
         font-size: .9rem;
     }
@@ -335,7 +339,14 @@ p {
 @media (max-width: 800px) {
     .volunteer-section {
         flex-direction: column;
-        /* text-align: center; */
+    }
+    .volunteer-section h3 {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+    .volunteer-section p {
+        font-size: .9rem;
+        margin-bottom: 20px;
     }
 
 

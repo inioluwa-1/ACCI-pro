@@ -33,62 +33,62 @@ p {
 }
 
 .initiative-section {
-            margin-bottom: 2rem;
-        }
-        
-        .light-blue-bg {
-            background-color: #E6F0F9;
-        }
-        
-        .initiative-content {
-            padding: 3rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: 100%;
-        }
-        
-        .initiative-content h2 {
-            color: #2B4F81;
-            font-weight: 600;
-            margin-bottom: 1.5rem;
-            font-size: 1.5rem;
-        }
-        
-        .initiative-content p {
-            color: #333;
-            line-height: 1.6;
-            margin-bottom: 1.5rem;
-        }
-        
-        .initiative-image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            padding: 0;
-        }
-        
-        .btn-register {
-            background-color: #FDD835;
-            color: white;
-            border: none;
-            padding: 0.6rem 2rem;
-            font-weight: 600;
-            display: inline-block;
-            transition: all 0.3s ease;
-            width: fit-content;
-        }
-        
-        .btn-register:hover {
-            background-color: #F9C100;
-            color: white;
+    margin-bottom: 2rem;
+}
 
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        
-        .no-padding {
-            padding: 0;
+.light-blue-bg {
+    background-color: #E6F0F9;
+}
+
+.initiative-content {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.initiative-content h2 {
+    color: #2B4F81;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.initiative-content p {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.initiative-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0;
+}
+
+.btn-register {
+    background-color: #FDD835;
+    color: white;
+    border: none;
+    padding: 0.6rem 2rem;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.3s ease;
+    width: fit-content;
+}
+
+.btn-register:hover {
+    background-color: #F9C100;
+    color: white;
+
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.no-padding {
+    padding: 0;
 }
 .initiatives-section {
     height: 400px;
@@ -149,7 +149,25 @@ p {
     }
 }  
 @media (max-width: 800px) {
-            .initiative-content {
-                padding: 2rem;
-            }
+    .initiative-content {
+        padding: 2rem;
+    }
+    section div p, section div, section div ul li {
+        font-size: .9rem;
+      }
+      section div h1, section div h2, section div h3 {
+        font-size: 1.5rem;
+      }
+      div h3, div h2, div h1 {
+        font-size: 1.5rem;
+      }
+      div p, div ul li {
+        font-size: .9rem;
+      }
+      .initiative-content h2 {
+        font-size: .5rem;
+      }
+      .initiative-content h2 {
+        font-size: 1.5rem;
+    }
 }

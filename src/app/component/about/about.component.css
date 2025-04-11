@@ -30,7 +30,6 @@ p {
 .hero h1 {
     font-size: 3rem;
     font-weight: bold;
-    
 }
 
 .impact-section {
@@ -75,6 +74,7 @@ p {
   width: 100%;
   margin: auto;
   display: flex;
+  gap: 60px;
   align-items: center;
   justify-content: space-evenly;
   padding: 40px;
@@ -234,6 +234,12 @@ p {
   .staff-info {
     margin-top: -15px;
   }  
+  section div p, section div {
+    font-size: .9rem;
+  }
+  section div h1, section div h2, section div h3 {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 800px) {
@@ -242,9 +248,10 @@ p {
       flex-direction: column;
       text-align: center;
   }
-  
+  .hero h1 {
+    font-size: 2rem;
+}
   .impact-heading::before {
-      /* display: none;  */
       width: 20%;
   }
   .impact-text, .impact-img {
