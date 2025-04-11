@@ -8,7 +8,9 @@
     color: white;
     width: 100%;
 }
-
+#VFL2{
+  display: none;
+}
 .hero::before {
     content: "";
     position: absolute;
@@ -87,4 +89,25 @@
     justify-content: center;
     text-align: center;
     position: relative;
+}
+
+@media (max-width: 800px) {
+  section div p, section div, section div ul li {
+    font-size: .9rem;
+  }
+  section div h1, section div h2, section div h3 {
+    font-size: 1.5rem;
+  }
+  div h3, div h2, div h1 {
+    font-size: 1.5rem;
+  }
+  div p, div ul li {
+    font-size: .9rem;
+  }
+  #VFL2{
+    display: block;
+  }
+  #VFL1{
+    display: none;
+  }
 }

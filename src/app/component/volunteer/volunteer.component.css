@@ -131,6 +131,9 @@ h2 {
     font-weight: bold;
     border-radius: 10px;
   }
+  .VLN2{
+    display: none;
+  }
   @media screen and (max-width: 800px) {
     .cta-card {
       padding: 1.5rem;
@@ -140,6 +143,25 @@ h2 {
       font-size: 1.5rem;
     }
   
-    
+    section div p, section div, section div ul li {
+        font-size: .9rem;
+      }
+      section div h1, section div h2, section div h3 {
+        font-size: 1.5rem;
+      }
+      div h3, div h2, div h1 {
+        font-size: 1.5rem;
+      }
+      div p, div ul li {
+        font-size: .9rem;
+      }
+
+      .VLN1{
+        display: none;
+      }
+      .VLN2{
+        display: block;
+      }
+
   }
   

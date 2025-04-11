@@ -178,4 +178,19 @@ p {
         flex-direction: column;
         gap:  30px;
     }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .program-card .card-title {
+        margin-bottom: 0.75rem;
+        font-size: .9rem;
+        margin-top: 15px;
+    }
+    .program-description {
+        font-size: .9rem;
+    }
+    .date-label {
+        font-size: .9rem;
+    }
+    
 }
