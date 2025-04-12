@@ -55,15 +55,7 @@ p {
   padding-bottom: 15px;
 }
 
-.impact-heading::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 100%;
-  width: 10%;
-  height: 5px;
-  background: #FFC107;
-}
+
 
 .impact-img {
   flex: 1;

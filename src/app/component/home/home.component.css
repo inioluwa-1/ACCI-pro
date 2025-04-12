@@ -68,15 +68,6 @@ p {
   margin-bottom: 25px;
 }
 
-.impact-heading::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 100%;
-    width: 20%;
-    height: 5px;
-    background: #FFC107;
-}
 
 .impact-img {
     flex: 1;
@@ -153,15 +144,7 @@ p {
   margin-bottom: 25px;
 }
 
-.focus-info h2::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 100%;
-    width: 30%;
-    height: 5px;
-    background: #FFC107;
-}
+
 .partners-section {
     /* display: flex; */
    
