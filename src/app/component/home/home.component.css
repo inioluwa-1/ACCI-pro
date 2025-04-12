@@ -212,12 +212,14 @@ p {
 .volunteer-grid {
     background-color: white;
     border-radius: 10px;
+    /* height: 400px; */
 }
 .volunteer-content {
     /* flex: 1; */
+    height: auto;
     text-align: left;
-    padding: 10%;
-    /* width: 50%; */
+    padding: 70px;
+    width: 50%;
 }
 .volunteer-content2{
     text-align: left;
@@ -378,6 +380,12 @@ p {
     }
     #focus-grid2 {
         display: grid;
+    }
+    .volunteer-content {
+        height: auto;
+        padding: 30px;
+        text-align: center;
+        width: 100%;
     }
 }
 @media screen and (max-width: 800px) {

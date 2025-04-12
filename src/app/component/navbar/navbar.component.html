@@ -1,45 +1,55 @@
-<nav class="navbar navbar-expand-lg bar ">
-    <div class="container-fluid container">
-        <img src="ACCI-logo.png" alt="" class="logo">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon" data-bs-toggle="collapse" data-bs-target="#navbarScroll"></span>
-        </button>
-        <div class="collapse navbar-collapse move" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar" style="--bs-scroll-height: 100px;">
-                <li class="nav-item">
-                    <a class="nav-link active text-white fs-5 con" [routerLink]="['']" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Home</a>
-                </li>
-        <li class="nav-item">
-            <a class="nav-link active text-white fs-5" [routerLink]="['/about']" data-bs-toggle="collapse" data-bs-target="#navbarScroll">About</a>
-        </li>
-        <li class="nav-item dropdown text-black">
-            <a class="nav-link dropdown-toggle text-white con fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Impact
+<nav class="navbar justify-content-between navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="ACCI-logo.png" alt="ACCI Logo" class="logo">
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Home</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/about']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">About</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Impact
             </a>
             <ul class="dropdown-menu">
-                <li><a  [routerLink]="['/key-initiative']" class="dropdown-item" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Key Initiatives</a></li>
-                <li><a  [routerLink]="['/upcoming-event']" class="dropdown-item" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Upcoming Events</a></li>
-                <li><a  [routerLink]="['/ongoing-programmes']" class="dropdown-item" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Ongoing Programmes</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/key-initiative']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Key Initiatives</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/upcoming-event']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Upcoming Events</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/ongoing-programmes']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Ongoing Programmes</a></li>
             </ul>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Join Us
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Join Us
             </a>
             <ul class="dropdown-menu">
-                <li><a [routerLink]="['/upcoming-event']" class="dropdown-item" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Events</a></li>
-                <li><a [routerLink]="['/volunteer']" class="dropdown-item" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Volunteer</a></li>
-                <li><a href="https://forms.gle/Mn3yfCsBJ1jPJG4U7" target="_blank" rel="noopener noreferrer" class="dropdown-item">Fund a project</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/upcoming-event']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Events</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/volunteer']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Volunteer</a></li>
+              <li><a class="dropdown-item" href="https://forms.gle/Mn3yfCsBJ1jPJG4U7" target="_blank" rel="noopener noreferrer">Fund a project</a></li>
             </ul>
-        </li>
-        <li class="nav-item con">
-            <a [routerLink]="['/contact']" class="nav-link text-white fs-5" data-bs-toggle="collapse" data-bs-target="#navbarScroll">Contact</a>
-        </li>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/contact']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Contact</a>
+          </li>
         </ul>
-        <a href="https://www.paypal.com/donate/?hosted_button_id=QV7LPVZAA785U">
-
-            <button  class="btn btn-warning text-white fs-5" [routerLink]="['https://www.paypal.com/donate/?hosted_button_id=QV7LPVZAA785U']">Donate Now</button>           
-        </a>
+        
+        <div class="donate-button">
+          <a href="https://www.paypal.com/donate/?hosted_button_id=QV7LPVZAA785U" target="_blank" rel="noopener noreferrer">
+            <button class="btn btn-donate">Donate Now</button>
+          </a>
+        </div>
+      </div>
     </div>
-    </div>
-</nav>
+  </nav>
