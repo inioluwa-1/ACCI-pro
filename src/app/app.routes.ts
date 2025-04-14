@@ -6,6 +6,8 @@ import { UpcomingEventComponent } from './component/upcoming-event/upcoming-even
 import { OngoingProgrammesComponent } from './component/ongoing-programmes/ongoing-programmes.component';
 import { VolunteerComponent } from './component/volunteer/volunteer.component';
 import { ContactComponent } from './component/contact/contact.component';
+import { SierraLeoneComponent } from './component/sierra-leone/sierra-leone.component';
+import { LiberiaComponent } from './component/liberia/liberia.component';
 
 export const routes: Routes = [
     {path: '', component: HomeComponent, title:'Home'},
@@ -15,4 +17,6 @@ export const routes: Routes = [
     {path: 'ongoing-programmes', component: OngoingProgrammesComponent, title:'Ongoing-Programmes'},
     {path: 'volunteer', component: VolunteerComponent, title:'Volunteer'},
     {path: 'contact', component: ContactComponent, title:'Contact'},
+    {path: 'sierra-leone', component: SierraLeoneComponent, title:'Sierra-leone'},
+    {path: 'liberia', component: LiberiaComponent, title:'Liberia'}
 ];
