@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-key-initiative',
-  imports: [RouterLink],
+  imports: [],
   templateUrl: './key-initiative.component.html',
   styleUrl: './key-initiative.component.css'
 })
