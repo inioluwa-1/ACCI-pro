@@ -1,5 +1,5 @@
 .loading-wrapper {
-  background-color:#318FF3; /* Bootstrap Blue */
+  background-color:#318FF3;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -30,7 +30,7 @@
   animation: spin 1s linear infinite;
 }
 
-/* Spinner Animation */
+
 @keyframes spin {
   to {
       transform: rotate(360deg);
