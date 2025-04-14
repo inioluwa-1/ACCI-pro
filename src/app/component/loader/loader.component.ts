@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-loader',
@@ -6,19 +6,20 @@ import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
   templateUrl: './loader.component.html',
   styleUrl: './loader.component.css'
 })
-export class LoaderComponent {
-  @Input() show = true;
-  fadeOut = false;
+export class LoaderComponent implements OnInit {
+  isVisible = true;
 
-  ngOnChanges(changes: SimpleChanges) {
-    if (changes['show'] && changes['show'].currentValue === false) {
-      // Trigger fade-out when loader is set to hide
-      this.fadeOut = true;
+  constructor() {}
 
-      // Optionally remove from DOM after fade
-      setTimeout(() => {
-        this.show = false;
-      }, 800); // Match the transition time in CSS
-    }
+  ngOnInit(): void {}
+
+  show() {
+    this.isVisible = true;
+  }
+
+  hide() {
+    setTimeout(() => {
+      this.isVisible = false;
+    }, 1000); // Match your CSS transition duration
   }
 }

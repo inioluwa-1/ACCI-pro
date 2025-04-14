@@ -1,11 +1,24 @@
 .loading-wrapper {
-  background-color:#318FF3;
+  background-color: #318FF3;
   height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  opacity: 1;
+  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+}
+
+
+.loading-wrapper.hidden {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .logo-image {
