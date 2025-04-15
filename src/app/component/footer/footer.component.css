@@ -121,7 +121,16 @@
 #focus-grid2 {
     display: none;
 }
+.social-media-icons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
 
+.social-media a {
+    color: white;
+    transition: color 0.3s ease;
+}
 @media screen and (max-width: 800px) {
     .partners-section {
         flex-direction: row;
