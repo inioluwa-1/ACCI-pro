@@ -68,24 +68,7 @@ p {
     padding: 0;
 }
 
-.btn-register {
-    background-color: #FFC107;
-    color: white;
-    border: none;
-    padding: 0.6rem 2rem;
-    font-weight: 600;
-    display: inline-block;
-    transition: all 0.3s ease;
-    width: fit-content;
-}
 
-.btn-register:hover {
-    background-color: #F9C100;
-    color: white;
-
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
 
 .no-padding {
     padding: 0;
@@ -121,7 +104,7 @@ p {
     margin-bottom: 15px;
 }
 
-.initiatives-btn {
+.initiatives-btn, .btn-register {
     display: inline-block;
     background-color: #FFC107;
     color: white;
@@ -130,6 +113,13 @@ p {
     text-decoration: none;
     font-weight: bold;
     border-radius: 10px;
+}
+.initiatives-btn:hover, .btn-register:hover {
+ background-color: black;
+ color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
 }
 @media (max-width: 800px) {
     .initiatives-section {

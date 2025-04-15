@@ -32,17 +32,24 @@ p {
     font-weight: bold;
 }
 
-.hero .btn {
+.hero .btn, .volunteer-btn {
     background-color: #FFC107;
     color: white;
-    font-weight: bold;
-    border: none;
-    padding: 10px 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.6rem 1.5rem;
     border-radius: 5px;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.hero .btn:hover {
-    background-color: gold;
+.hero .btn:hover, .volunteer-btn:hover {
+    background-color: black;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border: #FFC107;
 }
 .impact-section {
     /* width: 100%; */
@@ -222,15 +229,6 @@ p {
     margin-bottom: 20px;
 }
 
-.volunteer-btn {
-    background-color: #FFC107;
-    color: white;
-    padding: 10px 20px;
-    font-size: 20px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
 
 .volunteer-image {
     max-width: 100%;
@@ -281,6 +279,14 @@ p {
     text-decoration: none;
     font-weight: bold;
     border-radius: 10px;
+}
+.initiatives-btn:hover {
+    background-color: black;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border: #FFC107;
+    transition: all 0.3s ease;
 }
 
 @media (max-width: 800px) {

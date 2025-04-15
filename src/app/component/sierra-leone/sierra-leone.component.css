@@ -122,16 +122,22 @@
 }
 
 .initiatives-btn {
-    display: inline-block;
-    background-color: #FFC107;
-    color: white;
-    padding: 12px 24px;
-    font-size: 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 10px;
+  display: inline-block;
+  background-color: #FFC107;
+  color: white;
+  padding: 12px 24px;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
 }
-
+.initiatives-btn:hover {
+background-color: black;
+color: white;
+transform: translateY(-2px);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+transition: all 0.3s ease;
+}
 .staff-section {
     /* padding: 4rem 2rem; */
     text-align: center;
