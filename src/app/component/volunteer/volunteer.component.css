@@ -130,7 +130,15 @@ h2 {
     text-decoration: none;
     font-weight: bold;
     border-radius: 10px;
-  }
+    border: none;
+}
+.vol-btn:hover {
+ background-color: black;
+ color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
   .VLN2{
     display: none;
   }
