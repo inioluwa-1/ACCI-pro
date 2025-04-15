@@ -1,80 +1,81 @@
 <nav class="navbar justify-content-between navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="ACCI-logo.png" alt="ACCI Logo" class="logo">
-      </a>
-      
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      
-      <div class="collapse navbar-collapse" id="navbarMain">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a class="nav-link" [routerLink]="['']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Home</a>
-          </li>
-          
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              About
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" [routerLink]="['/about']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
-                  Our Story
-                </a>
-              </li>
-              <li class="dropdown-submenu">
-                <a  class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Branches
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" [routerLink]="['/liberia']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
-                      Liberia
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" [routerLink]="['/sierra-leone']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
-                      Sierra Leone
-                    </a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Impact
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" [routerLink]="['/key-initiative']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Key Initiatives</a></li>
-              <li><a class="dropdown-item" [routerLink]="['/upcoming-event']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Upcoming Events</a></li>
-            </ul>
-          </li>
-          
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Join Us
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" [routerLink]="['/upcoming-event']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Events</a></li>
-              <li><a class="dropdown-item" [routerLink]="['/volunteer']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Volunteer</a></li>
-              <li><a class="dropdown-item" href="https://forms.gle/Mn3yfCsBJ1jPJG4U7" target="_blank" rel="noopener noreferrer">Fund a project</a></li>
-            </ul>
-          </li>
-          
-          <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/contact']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Contact</a>
-          </li>
-        </ul>
-        
-        <div class="donate-button">
-          <a href="https://www.paypal.com/donate/?hosted_button_id=QV7LPVZAA785U" target="_blank" rel="noopener noreferrer">
-            <button class="btn btn-donate">Donate Now</button>
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="ACCI-logo.png" alt="ACCI Logo" class="logo">
+    </a>
+   
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+   
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Home</a>
+        </li>
+       
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            About
           </a>
-        </div>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" [routerLink]="['/about']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                Our Story
+              </a>
+            </li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#" role="button" 
+                 onclick="event.preventDefault(); event.stopPropagation(); this.nextElementSibling.classList.toggle('show')">
+                Branches
+              </a>
+              
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" [routerLink]="['/liberia']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                    Liberia
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" [routerLink]="['/sierra-leone']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                    Sierra Leone
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Impact
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" [routerLink]="['/key-initiative']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Key Initiatives</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/upcoming-event']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Upcoming Events</a></li>
+          </ul>
+        </li>
+       
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Join Us
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" [routerLink]="['/upcoming-event']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Events</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/volunteer']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Volunteer</a></li>
+            <li><a class="dropdown-item" href="https://forms.gle/Mn3yfCsBJ1jPJG4U7" target="_blank" rel="noopener noreferrer">Fund a project</a></li>
+          </ul>
+        </li>
+       
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/contact']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Contact</a>
+        </li>
+      </ul>
+     
+      <div class="donate-button">
+        <a href="https://www.paypal.com/donate/?hosted_button_id=QV7LPVZAA785U" target="_blank" rel="noopener noreferrer">
+          <button class="btn btn-donate">Donate Now</button>
+        </a>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>
