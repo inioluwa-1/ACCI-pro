@@ -21,6 +21,50 @@
     background: rgba(0, 0, 0, 0.5);
 }
 
+.staff-section {
+  /* padding: 4rem 2rem; */
+  text-align: center;
+  color: #1d3557;
+  background-color: #318FF3;
+}
+
+.staff-card {
+  background-color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+  transition: transform 0.2s;
+}
+
+.staff-card:hover {
+  transform: scale(1.02);
+}
+
+.staff-card img {
+  padding: 20px;
+  width: 100%;
+  height: 400px;
+}
+
+.staff-info {
+  margin-top: -40px;
+  margin-bottom: 10px;
+  padding: 1rem;
+}
+
+.staff-name {
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 5px;
+  margin-bottom: 0.2rem;
+}
+
+.staff-role {
+  color: #777;
+  font-size: 1.4rem;
+}
+
 .hero-content {
     position: relative;
     z-index: 1;
@@ -138,49 +182,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
 }
-.staff-section {
-    /* padding: 4rem 2rem; */
-    text-align: center;
-    color: #1d3557;
-  }
-  
-  .staff-card {
-    background-color: white;
-    border-radius: 1rem;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    margin-bottom: 2rem;
-    transition: transform 0.2s;
-  }
-  
-  /* .staff-card:hover {
-    transform: scale(1.02);
-  } */
-  
-  .staff-card img {
-    padding: 40px;
-    width: 100%;
-    height: 400px;
-    border-radius: 20%;
-    /* border-bottom: 1px solid #eee; */
-  }
-  
-  .staff-info {
-    margin-top: -40px;
-    margin-bottom: 10px;
-    padding: 1rem;
-  }
-  
-  .staff-name {
-    font-size: 1.6rem;
-    font-weight: 600;
-    margin-bottom: 0.2rem;
-  }
-  
-  .staff-role {
-    color: #777;
-    font-size: 1.4rem;
-  }
+
 @media (max-width: 800px) {
   section div p, section div, section div ul li {
     font-size: .9rem;
@@ -210,4 +212,19 @@
     padding: 10px 20px;
     font-size: 14px;
 }
+
+.staff-card {
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+
+}
+.staff-card img {
+  padding: 10px;
+  width: 100%;
+  height: auto;
+}
+.staff-info {
+  margin-top: -15px;
+} 
 }
