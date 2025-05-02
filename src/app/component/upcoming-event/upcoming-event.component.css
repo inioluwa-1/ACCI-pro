@@ -59,6 +59,7 @@ p {
     color: #333;
     line-height: 1.6;
     margin-bottom: 1.5rem;
+    text-align: justify;
 }
 
 .initiative-image {
@@ -124,6 +125,9 @@ p {
 @media (max-width: 800px) {
     .initiatives-section {
         height: 200px;
+    }
+    .initiative-section{
+        flex-direction: column-reverse;
     }
     .initiatives-content h2 {
         font-size: 20px;

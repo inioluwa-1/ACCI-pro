@@ -32,7 +32,7 @@ p {
     font-weight: bold;
 }
 
-.sid {
+.sid{
     display: flex;
     gap:  30px;
 }
