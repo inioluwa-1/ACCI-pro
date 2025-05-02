@@ -38,13 +38,14 @@ p {
   margin: auto;
   display: flex;
   align-items: center;
-  /* gap: 20px; */
+  gap: 20px;
   justify-content: space-evenly;
   padding: 40px;
 }
 
 .impact-text {
   width: 50%;
+  text-align: justify;
 }
 
 .impact-heading {
@@ -307,7 +308,7 @@ p {
   }
   
   .team-image {
-    height: 240px;
+    height: 350px;
   }
 }
 @media (max-width: 800px) {
@@ -352,11 +353,14 @@ p {
 }
 @media screen and (max-width: 800px) {
   .mission-vision-values {
-      flex-direction: column;
+      flex-direction: column-reverse;
       text-align: center;
   }
   .mvv-text, .mvv-img {
       width: 100%;
       text-align: start;
+  }
+  .objectives-section{
+    flex-direction: column-reverse;
   }
 }

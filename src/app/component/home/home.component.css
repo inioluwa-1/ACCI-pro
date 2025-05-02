@@ -63,6 +63,7 @@ p {
 
 .impact-text {
     width: 50%;
+    text-align: justify;
 }
 
 .impact-heading {

@@ -112,6 +112,7 @@ p {
 
 .program-description {
     font-size: 1.2rem;
+    text-align: justify;
 }
 
 .main-container {
