@@ -58,7 +58,7 @@ p {
     align-items: center;
     /* gap: 20px; */
     justify-content: space-evenly;
-    padding: 40px;
+    /* padding: 40px; */
 }
 
 .impact-text {
@@ -293,7 +293,7 @@ p {
     .impact-section {
         width: 100%;
         flex-direction: column;
-        text-align: center;
+        text-align: start;
     }
     .hero h1 {
         font-size: 2rem;
@@ -345,7 +345,7 @@ p {
         flex-direction: column;
     }
     .volunteer-content {
-        text-align: center;
+        text-align: start;
         padding: 10px;
     }
 
@@ -373,7 +373,7 @@ p {
     .volunteer-content {
         height: auto;
         padding: 30px;
-        text-align: center;
+        text-align: start;
         width: 100%;
     }
 }

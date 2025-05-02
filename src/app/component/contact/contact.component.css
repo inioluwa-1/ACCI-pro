@@ -131,6 +131,7 @@ transition: all 0.3s ease;
       }
     .talk-text {
         font-size: .9rem;
+        text-align: start;
       }
       .talk-heading {
         font-size: 1rem;

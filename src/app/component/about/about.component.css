@@ -347,6 +347,7 @@ p {
   }
   .impact-text, .impact-img {
       width: 100%;
+      text-align: start;
   }
 }
 @media screen and (max-width: 800px) {
@@ -356,5 +357,6 @@ p {
   }
   .mvv-text, .mvv-img {
       width: 100%;
+      text-align: start;
   }
 }
