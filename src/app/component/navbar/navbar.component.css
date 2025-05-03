@@ -1,11 +1,12 @@
 .navbar {
-  background-color: transparent;
   position: sticky;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 999;
   padding: 0.7rem 1.2rem;
+  background-color: rgba(0, 0, 0, .4);
+
 }
 
 .navbar .container {
@@ -49,7 +50,7 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 0.5rem;
-  background-color: #318FF3;
+  background-color: rgba(0, 0, 0, .5);
   color: white;
   font-size: 1rem;
   font-weight: 500;
@@ -66,7 +67,6 @@
 }
 
 .dropdown-item:hover {
-  /* color: #FF9900; */
   background-color: rgba(255, 255, 255, 0.1);
   color: #FFC107;
 }
@@ -84,8 +84,8 @@
 }
 
 .btn-donate:hover {
- background-color: black;
- color: white;
+  background-color: black;
+  color: white;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
@@ -93,7 +93,7 @@
 /* Navbar Toggler */
 .navbar-toggler {
   border: none;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: transparent;
   border-radius: 4px;
   padding: 0.5rem;
 }
@@ -109,32 +109,34 @@
 
 /* Submenu positioning */
 .dropdown-submenu {
-position: relative;
+  position: relative;
 }
 
 .dropdown-submenu > .dropdown-menu {
-top: 0;
-left: 100%;
-margin-left: 0.1rem;
-margin-top: -0.5rem;
-border-radius: 8px;
-background-color: #318FF3;
-display: none; /* Hide by default */
+  top: 0;
+  left: 100%;
+  margin-left: 0.1rem;
+  margin-top: -0.5rem;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, .5);
+  display: none; /* Hide by default */
 }
 
-/* Only show the submenu when hovering over the parent item */
-.dropdown-submenu:hover > .dropdown-menu {
-display: block;
+/* Only show the submenu when hovering over the parent item on desktop */
+@media (min-width: 992px) {
+  .dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+  }
 }
 
 /* Optional: Change caret for submenu */
 .dropdown-item.dropdown-toggle::after {
-transform: rotate(-90deg);
-float: right;
-margin-top: 0.3rem;
+  transform: rotate(-90deg);
+  float: right;
+  margin-top: 0.3rem;
 }
 
-/* Enable dropdowns on hover */
+/* Enable dropdowns on hover for desktop */
 @media (min-width: 992px) {
   .dropdown:hover > .dropdown-menu {
     display: block;
@@ -160,72 +162,159 @@ margin-top: 0.3rem;
   }
 }
 
-/* Responsive Design */
+/* Responsive Design - Mobile Styles */
 @media screen and (max-width: 991px) {
+  /* Mobile navbar styles */
+  .navbar {
+    padding: 0;
+    background-color: rgba(0, 0, 0, .4);
+  }
+  
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .9);
+    padding: 0;
+    margin: 0;
+    z-index: 1050;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  
   .navbar-nav {
-    margin-left: 0;
-    padding-top: 1rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
   }
   
   .nav-link {
-    padding: 0.7rem 0 !important;
+    color: white !important;
+    padding: 1rem 1.5rem !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-weight: 500;
   }
   
-  .donate-button {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    text-align: center;
+  .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #FF9900 !important;
   }
   
-  .logo {
-    width: 150px;
-    margin-left: -40px;
-    margin-bottom: -50px;
-    margin-top: -50px;  
+  .dropdown-toggle::after {
+    float: right;
+    margin-top: 0.5rem;
   }
-
-  /* Handle mobile submenu display with click instead of hover */
-  .dropdown-submenu .dropdown-menu {
-    position: static;
-    margin-left: 1rem;
-    margin-right: 1rem;
+  
+  /* Mobile dropdown menus */
+  .dropdown-menu {
+    background-color: rgba(0, 0, 0, .5);
     box-shadow: none;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .navbar {
-    padding: 0.5rem;
+    border: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
   }
   
-  .logo {
-    width: 120px;
+  .dropdown-item {
+    color: white;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
   
-  .btn-donate {
-    width: 100%;
-    font-size: 1rem;
+  .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #FFC107;
   }
-}
-
-@media screen and (max-width: 991px) {
-  .dropdown-submenu:hover > .dropdown-menu {
-    display: none; /* Disable hover behavior on mobile */
+  
+  /* Mobile close button */
+  .navbar-toggler {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 1060; /* Higher z-index to be above the overlay */
+    background-color: transparent;
   }
-}
-
-@media screen and (max-width: 991px) {
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  
   /* Hide submenus by default on mobile */
   .dropdown-submenu .dropdown-menu {
     display: none;
     position: static;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 0;
+    padding: 0;
     box-shadow: none;
+    width: 100%;
+    border-radius: 0;
   }
 
   /* Show submenu when 'show' class is present */
   .dropdown-submenu .dropdown-menu.show {
     display: block;
+  }
+  
+  /* Mobile logo */
+  .logo {
+    width: 150px;
+    margin-left: -20px;
+    margin-bottom: -30px;
+    margin-top: -30px;
+    position: relative;
+    z-index: 1060; /* Make sure logo is above the overlay */
+  }
+  
+  /* Mobile donate button */
+  .donate-button {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0 1.5rem 1.5rem;
+  }
+  
+  .btn-donate {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Close button for mobile menu */
+  .navbar-toggler[aria-expanded="true"] {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 1060;
+  }
+  
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M5 5L25 25M5 25L25 5'/%3e%3c/svg%3e");
+  }
+  
+  /* Submenu dropdown toggle */
+  .dropdown-item.dropdown-toggle {
+    position: relative;
+  }
+  
+  .dropdown-item.dropdown-toggle::after {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+/* Additional small screen adjustments */
+@media screen and (max-width: 576px) {
+  .navbar {
+    padding: 0;
+  }
+  
+  .logo {
+    width: 120px;
+    margin-left: -10px;
+    margin-bottom: -20px;
+    margin-top: -20px;
   }
 }

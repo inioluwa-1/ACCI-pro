@@ -3,7 +3,7 @@ p {
 }
 .hero {
     position: relative;
-    height: 800px;
+    height: 90dvh;
     display: flex;
     align-items: center;
     justify-content: center;
