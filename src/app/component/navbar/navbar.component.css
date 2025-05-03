@@ -1,23 +1,19 @@
-/* Main Navbar Styling */
 .navbar {
-  background-color: #318FF3;
+  background-color: transparent;
   position: sticky;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 999;
   padding: 0.7rem 1.2rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Container adjustment for better centering */
 .navbar .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* Logo Styling */
 .logo {
   width: 220px;
   margin-left: -80px;

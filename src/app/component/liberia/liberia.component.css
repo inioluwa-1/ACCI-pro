@@ -7,6 +7,7 @@
     text-align: center;
     color: white;
     width: 100%;
+    margin-top: -102px;
 }
 #VFL2{
   display: none;
@@ -50,6 +51,7 @@
   .section-text {
     font-size: 1rem;
     line-height: 1.7;
+    text-align: justify;
   }
   .bullet-title {
     font-weight: 600;

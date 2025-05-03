@@ -10,6 +10,7 @@ p {
     justify-content: center;
     text-align: center;
     color: white;
+    margin-top: -102px;
     width: 100%;
 }
 
@@ -92,13 +93,9 @@ p {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-.mvv-title {
-  font-weight: bold;
-  color: white;
-  position: relative;
-  display: inline-block;
-  padding-top: 15px;
-  padding-bottom: 15px;
+.mvv-text p {
+  text-align: justify;
+
 }
 
 .objectives-section {
