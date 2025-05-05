@@ -11,12 +11,38 @@
       ACCI addresses social, economic, and environmental challenges through community-driven programs,
       empowering individuals, communities, and societies to thrive through local action and live better narratives.
     </p>
-    <a href="https://forms.gle/r9vC4w1SyXgXJgsc9" target="_blank" rel="noopener noreferrer" class="reach-btn mt-2">Reach out to us</a>
+    <button  type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn reach-btn mt-2 btn-warning text-white px-4 py-2 vol-btn">Reach out to us</button>
+
   </section>
   
 <section class="initiatives-section" style="background-image: url('flower.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
     <div class="initiatives-content">
         <h2>Support Our Mission?</h2>
-        <a href="https://forms.gle/r9vC4w1SyXgXJgsc9" target="_blank" rel="noopener noreferrer" class="initiatives-btn">Partner with Us</a>
+        <a [routerLink]="['/partnerWithUs']" rel="noopener noreferrer" class="initiatives-btn">Partner with Us</a>
     </div>
 </section>
+
+<div class="modal fade" style="height: fit-content;" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Partnership Inquiry Form</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="form-container">
+                <iframe 
+                    src="https://forms.gle/BbknSbwoWRFtkLMg8" 
+                    width="100%" 
+                    height="100%" 
+                    frameborder="0" 
+                    marginheight="0" 
+                    marginwidth="0"
+                    allowfullscreen
+                    allow="autoplay"
+                >Loading…</iframe>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -2,12 +2,10 @@
     <video autoplay muted loop id="hero-video">
         <source src="ACCI_HeroSec.webm" type="video/webm">
         <source src="ACCI_HeroSec.mp4" type="video/mp4">
-        <!-- <source src="ACCI_HeroSec.mp4" type="video/ogg"> -->
-      
     </video>
     <div class="hero-content">
         <h1>Transforming Lives, Creating Sustainable Change.</h1>
-        <button class="btn btn-warning"><a href="https://forms.gle/gmFQahnWFFHrapZ3A" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: white;">Join Us</a></button>
+        <button class="btn btn-warning"><a [routerLink]="['/volunteer']" rel="noopener noreferrer" style="text-decoration: none; color: white;">Join Us</a></button>
     </div>
 </section>
 <section class="impact-section  mt-5">
@@ -99,7 +97,7 @@
                     <p  style="text-align: justify;">
                         At ACCI, we drive change through education, economic empowerment, and climate action. Together, we create  opportunities and build a sustainable future.  Join us in making a difference!
                     </p>
-                    <button class="volunteer-btn"><a href="https://forms.gle/gmFQahnWFFHrapZ3A" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: white;">Volunteer</a></button>
+                    <button class="volunteer-btn"><a [routerLink]="['/volunteer']" rel="noopener noreferrer" style="text-decoration: none; color: white;">Volunteer</a></button>
                 </div>
                 <div class="volunteer-content2">
                     <img src="empcom.jpg" class="volunteer-image" alt="Community Work">

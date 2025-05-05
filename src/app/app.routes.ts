@@ -8,6 +8,8 @@ import { VolunteerComponent } from './component/volunteer/volunteer.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { SierraLeoneComponent } from './component/sierra-leone/sierra-leone.component';
 import { LiberiaComponent } from './component/liberia/liberia.component';
+import { partnerWithUsComponent } from './component/partnerWithUs/partnerWithUs.component';
+
 
 export const routes: Routes = [
     {path: '', component: HomeComponent, title:'Home | Action For Collective Change'},
@@ -18,5 +20,6 @@ export const routes: Routes = [
     {path: 'volunteer', component: VolunteerComponent, title:'Volunteer | Action For Collective Change'},
     {path: 'contact', component: ContactComponent, title:'Contact | Action For Collective Change'},
     {path: 'sierra-leone', component: SierraLeoneComponent, title:'Sierra-leone | Action For Collective Change'},
-    {path: 'liberia', component: LiberiaComponent, title:'Liberia | Action For Collective Change'}
+    {path: 'liberia', component: LiberiaComponent, title:'Liberia | Action For Collective Change'},
+    {path: 'partnerWithUs', component: partnerWithUsComponent, title:'partnerWithUs | Action For Collective Change'}
 ];

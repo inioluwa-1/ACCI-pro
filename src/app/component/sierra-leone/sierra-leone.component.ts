@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
+
 
 @Component({
   selector: 'app-sierra-leone',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './sierra-leone.component.html',
   styleUrl: './sierra-leone.component.css'
 })

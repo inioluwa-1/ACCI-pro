@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-key-initiative',
-  imports: [],
+  standalone: true,
+  imports: [RouterModule],
   templateUrl: './key-initiative.component.html',
   styleUrl: './key-initiative.component.css'
 })

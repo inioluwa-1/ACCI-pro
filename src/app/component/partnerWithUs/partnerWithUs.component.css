@@ -1,0 +1,248 @@
+p {
+  font-size: 1.29rem;
+}
+.hero {
+  position: relative;
+  height: 90dvh;
+  margin-top: -102px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-section {
+  background-color: white;
+  padding: 40px;
+  text-align: justify;
+}
+.lead{
+padding-top: 10px;
+text-align: justify;
+}
+.why-volunteer {
+  background-color: #e9f2fb;
+  padding: 30px 20px;
+}
+
+.volunteer-section {
+  background-color: white;
+  padding: 30px 20px;
+}
+
+.opportunities {
+  margin-top: 40px;
+}
+
+h2 {
+  color: #2c5282;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.volunteer-section h2 {
+  text-align: left;
+}
+
+.opportunities h2 {
+  text-align: left;
+}
+
+.image-container {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.content-text {
+  text-align: left;
+  font-size: 1.29rem;
+}
+
+.list-item {
+  text-align: left;
+  padding-right: 20px;
+  position: relative;
+}
+
+.more-text {
+  text-align: left;
+  /* margin-top: 20px; */
+  font-size: 1.29rem;
+  font-style: italic;
+}
+.accr {
+  text-align: left;
+  font-size: 1.29rem;
+}
+.cta-section {
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-card {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem 2.5rem;
+  max-width: 600px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cta-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #1d3557;
+  margin-bottom: 1rem;
+}
+
+.cta-text {
+  color: #333;
+  font-size: 1.29rem;
+  margin-bottom: 1.5rem;
+}
+.vol-btn {
+  display: inline-block;
+  background-color: #FFC107;
+  color: white;
+  padding: 12px 24px;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+}
+.vol-btn:hover {
+background-color: black;
+color: white;
+transform: translateY(-2px);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+transition: all 0.3s ease;
+}
+.VLN2{
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .cta-card {
+    padding: 1.5rem;
+  }
+
+  .cta-title {
+    font-size: 1.5rem;
+  }
+
+  section div p, section div, section div ul li {
+      font-size: .9rem;
+    }
+    section div h1, section div h2, section div h3 {
+      font-size: 1.5rem;
+    }
+    div h3, div h2, div h1 {
+      font-size: 1.5rem;
+    }
+    div p, div ul li {
+      font-size: .9rem;
+    }
+
+    .VLN{
+      display: none;
+    }
+
+}
+
+
+
+/* .form-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .form-container {
+  background-color: white;
+  width: 80%;
+  max-width: 800px;
+  height: 80%;
+  border-radius: 10px;
+  position: relative;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.close-form {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  z-index: 1002;
+  background: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-container iframe {
+  width: 100%;
+  height: calc(100% - 20px);
+  border: none;
+}
+
+@media screen and (max-width: 800px) {
+  .form-container { width: 95%; height: 90%; }
+}
+*/
+
+
+.form-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 1700px; /* Adjust this for your form's height */
+  margin: 20px 0;
+}
+.form-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100dvh;
+  border: 0;
+}
