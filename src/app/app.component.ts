@@ -15,7 +15,7 @@ import { LoaderComponent } from './component/loader/loader.component';
 
 })
 export class AppComponent {
-  title = 'ACCI-project';
+  title = 'Actions For Collective Change';
   @ViewChild(LoaderComponent) loader!: LoaderComponent;
 
   constructor(private router: Router) {
