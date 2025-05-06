@@ -12,14 +12,14 @@ import { partnerWithUsComponent } from './component/partnerWithUs/partnerWithUs.
 
 
 export const routes: Routes = [
-    {path: '', component: HomeComponent, title:'Home | Action For Collective Change'},
-    {path: 'about', component: AboutComponent, title:'About | Action For Collective Change'},
-    {path: 'key-initiative', component: KeyInitiativeComponent, title:'Key-Initiative | Action For Collective Change'},
-    {path: 'upcoming-event', component: UpcomingEventComponent, title:'Upcoming-Event | Action For Collective Change'},
-    {path: 'ongoing-programmes', component: OngoingProgrammesComponent, title:'Ongoing-Programmes | Action For Collective Change'},
-    {path: 'volunteer', component: VolunteerComponent, title:'Volunteer | Action For Collective Change'},
-    {path: 'contact', component: ContactComponent, title:'Contact | Action For Collective Change'},
-    {path: 'sierra-leone', component: SierraLeoneComponent, title:'Sierra-leone | Action For Collective Change'},
-    {path: 'liberia', component: LiberiaComponent, title:'Liberia | Action For Collective Change'},
-    {path: 'partnerWithUs', component: partnerWithUsComponent, title:'partnerWithUs | Action For Collective Change'}
+    {path: '', component: HomeComponent, title:'Home | Action for Collective Change Initiative'},
+    {path: 'about', component: AboutComponent, title:'About | Action for Collective Change Initiative'},
+    {path: 'key-initiative', component: KeyInitiativeComponent, title:'Key-Initiative | Action for Collective Change Initiative'},
+    {path: 'upcoming-event', component: UpcomingEventComponent, title:'Upcoming-Event | Action for Collective Change Initiative'},
+    {path: 'ongoing-programmes', component: OngoingProgrammesComponent, title:'Ongoing-Programmes | Action for Collective Change Initiative'},
+    {path: 'volunteer', component: VolunteerComponent, title:'Volunteer | Action for Collective Change Initiative'},
+    {path: 'contact', component: ContactComponent, title:'Contact | Action for Collective Change Initiative'},
+    {path: 'sierra-leone', component: SierraLeoneComponent, title:'Sierra-leone | Action for Collective Change Initiative'},
+    {path: 'liberia', component: LiberiaComponent, title:'Liberia | Action for Collective Change Initiative'},
+    {path: 'partnerWithUs', component: partnerWithUsComponent, title:'partnerWithUs | Action for Collective Change Initiative'}
 ];

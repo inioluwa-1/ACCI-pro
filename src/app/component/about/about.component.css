@@ -1,37 +1,37 @@
-
 p {
   font-size: 1.2rem;
 }
+
 .hero {
-    position: relative;
-    height: 90dvh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    margin-top: -102px;
-    width: 100%;
+  position: relative;
+  height: 90dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-top: -102px;
+  width: 100%;
 }
 
 .hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .hero-content {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .hero h1 {
-    font-size: 3rem;
-    font-weight: bold;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .impact-section {
@@ -58,13 +58,12 @@ p {
   padding-bottom: 15px;
 }
 
-
-
 .impact-img {
   flex: 1;
   max-width: 600px;
   border-radius: 10px;
 }
+
 .mission-vision-values {
   width: 100%;
   margin: auto;
@@ -76,15 +75,18 @@ p {
   background-color: #318FF3;
   color: white;
 }
+
 .mvv-img {
   flex: 1;
   max-width: 600px;
   height: auto;
   border-radius: 10px;
 }
+
 .mvv-text {
   width: 50%;
 }
+
 .mvv-title {
   font-weight: bold;
   color: white;
@@ -93,9 +95,9 @@ p {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
 .mvv-text p {
   text-align: justify;
-
 }
 
 .objectives-section {
@@ -103,7 +105,6 @@ p {
   margin: auto;
   display: flex;
   align-items: center;
-  /* gap: 20px; */
   justify-content: space-evenly;
   padding: 40px;
 }
@@ -117,6 +118,7 @@ p {
   max-width: 600px;
   border-radius: 10px;
 }
+
 .objectives-heading {
   font-weight: bold;
   color: #1d3557;
@@ -125,6 +127,7 @@ p {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
 .initiatives-section {
   height: 400px;
   display: flex;
@@ -168,17 +171,12 @@ p {
 }
 
 .initiatives-btn:hover {
- background-color: black;
- color: white;
+  background-color: black;
+  color: white;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
-
-  
-  
 }
-
-
 
 .team-section {
   background-color: #318FF3;
@@ -294,7 +292,55 @@ p {
   color: white;
 }
 
-@media (max-width: 767px) {
+/* Consolidated media queries at 768px */
+@media (max-width: 768px) {
+  /* Text sizing */
+  section div p, section div {
+    font-size: .9rem;
+  }
+  
+  section div h1, section div h2, section div h3 {
+    font-size: 1.5rem;
+  }
+  
+  /* Hero section */
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  /* Impact section */
+  .impact-section {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .impact-heading::before {
+    width: 20%;
+  }
+  
+  .impact-text, .impact-img {
+    width: 100%;
+    text-align: start;
+  }
+  
+  /* Mission vision values section */
+  .mission-vision-values {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  
+  .mvv-text, .mvv-img {
+    width: 100%;
+    text-align: start;
+  }
+  
+  /* Objectives section */
+  .objectives-section {
+    flex-direction: column-reverse;
+  }
+  
+  /* Team section */
   .team-section {
     padding: 3rem 0;
   }
@@ -307,57 +353,20 @@ p {
   .team-image {
     height: 350px;
   }
-}
-@media (max-width: 800px) {
+  
   .staff-card {
     width: 80%;
     margin: auto;
-  padding: 10px;
-
+    padding: 10px;
   }
+  
   .staff-card img {
     padding: 10px;
     width: 100%;
     height: auto;
   }
+  
   .staff-info {
     margin-top: -15px;
-  }  
-  section div p, section div {
-    font-size: .9rem;
-  }
-  section div h1, section div h2, section div h3 {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 800px) {
-  .impact-section {
-      width: 100%;
-      flex-direction: column;
-      text-align: center;
-  }
-  .hero h1 {
-    font-size: 2rem;
-}
-  .impact-heading::before {
-      width: 20%;
-  }
-  .impact-text, .impact-img {
-      width: 100%;
-      text-align: start;
-  }
-}
-@media screen and (max-width: 800px) {
-  .mission-vision-values {
-      flex-direction: column-reverse;
-      text-align: center;
-  }
-  .mvv-text, .mvv-img {
-      width: 100%;
-      text-align: start;
-  }
-  .objectives-section{
-    flex-direction: column-reverse;
   }
 }

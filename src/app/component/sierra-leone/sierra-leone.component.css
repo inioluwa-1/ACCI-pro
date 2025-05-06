@@ -1,126 +1,100 @@
 .hero {
-    position: relative;
-    height: 90dvh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: -102px;
-    color: white;
-    width: 100%;
+  position: relative;
+  height: 90dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  width: 100%;
+  margin-top: -102px;
 }
-#VFL2{
+
+#VFL2 {
   display: none;
 }
+
 .hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .hero-content {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .hero h1 {
-    font-size: 3rem;
-    font-weight: bold;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .section-title {
-    color: #2F5597;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  .yellow-bar {
-    width: 40px;
-    height: 4px;
-    background-color: #FFD700;
-    margin-bottom: 0.5rem;
-  }
-  .content-section {
-    padding: 4rem 2rem;
-  }
-  .section-text {
-    font-size: 1rem;
-    line-height: 1.7;
-    text-align: justify;
-  }
-  .bullet-title {
-    font-weight: 600;
-    color: #2F5597;
-  }
-  .img-fluid {
-    border-radius: 0.5rem;
-  }
-  .section-title {
-    color: #2F5597;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  
-  .yellow-bar {
-    width: 40px;
-    height: 4px;
-    background-color: #FFD700;
-    margin-bottom: 0.5rem;
-  }
-  
-  .section-text {
-    font-size: 1.29rem;
-    line-height: 1.7;
-  }
-  
-  .bullet-title {
-    font-weight: 600;
-    color: #2F5597;
-  }
-  
-  .img-fluid {
-    border-radius: 0.5rem;
-  }
-  .initiatives-section {
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
+  color: #2F5597;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
+
+.yellow-bar {
+  width: 40px;
+  height: 4px;
+  background-color: #FFD700;
+  margin-bottom: 0.5rem;
+}
+
+.content-section {
+  padding: 4rem 2rem;
+}
+
+.section-text {
+  font-size: 1.29rem;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+.bullet-title {
+  font-weight: 600;
+  color: #2F5597;
+}
+
+.img-fluid {
+  border-radius: 0.5rem;
+}
+
 .initiatives-section {
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
 }
 
 .initiatives-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .initiatives-content {
-    position: relative;
-    z-index: 1;
-    color: white;
+  position: relative;
+  z-index: 1;
+  color: white;
 }
 
 .initiatives-content h2 {
-    font-size: 42px;
-    font-weight: bold;
-    margin-bottom: 15px;
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
 .initiatives-btn {
@@ -133,38 +107,50 @@
   font-weight: bold;
   border-radius: 10px;
 }
+
 .initiatives-btn:hover {
-background-color: black;
-color: white;
-transform: translateY(-2px);
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-transition: all 0.3s ease;
+  background-color: black;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
 }
 
-@media (max-width: 767px) {
-    .initiatives-section {
-        height: 200px;
-    }
-    .initiatives-content h2 {
-        font-size: 20px;
-    }
-    .initiatives-btn {
-        padding: 10px 20px;
-        font-size: 14px;
-    }
-  section div p, section div, section div ul li {
-    font-size: .9rem;
+@media (max-width: 768px) {
+  section div p, 
+  section div, 
+  section div ul li {
+      font-size: .9rem;
   }
-  section div h1, section div h2, section div h3 {
-    font-size: 1.5rem;
+  
+  section div h1, 
+  section div h2, 
+  section div h3,
+  div h3, 
+  div h2, 
+  div h1 {
+      font-size: 1.5rem;
   }
-  div h3, div h2, div h1 {
-    font-size: 1.5rem;
+  
+  div p, 
+  div ul li {
+      font-size: .9rem;
   }
-  div p, div ul li {
-    font-size: .9rem;
+  
+  #VFL {
+      flex-direction: column-reverse;
   }
-  #VFL{
-    flex-direction: column-reverse;
-  } 
+  
+  .initiatives-section {
+      height: 200px;
+  }
+  
+  .initiatives-content h2 {
+      font-size: 20px;
+  }
+  
+  .initiatives-btn {
+      padding: 10px 20px;
+      font-size: 14px;
+  }
 }
