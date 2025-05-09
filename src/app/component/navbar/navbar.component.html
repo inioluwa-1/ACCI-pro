@@ -78,13 +78,91 @@
       </ul>
      
       <div class="donate-button">
-        <a href="https://www.paypal.com/donate/?hosted_button_id=QV7LPVZAA785U" target="_blank" rel="noopener noreferrer">
-          <button class="btn btn-donate">Donate Now</button>
-        </a>
+        <!-- <a href="https://www.paypal.com/donate/?hosted_button_id=QV7LPVZAA785U" target="_blank" rel="noopener noreferrer"> -->
+          <button class="btn btn-donate" data-bs-toggle="modal" data-bs-target="#donationModal">Donate Now</button>
+        <!-- </a> -->
       </div>
     </div>
   </div>
 </nav>
+
+
+
+<!-- Improved Donation Modal with dynamic height adjustment -->
+<div class="modal fade" id="donationModal" tabindex="-1" aria-labelledby="donationModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h1 class="modal-title fs-5" id="donationModalLabel">Support Our Cause</h1>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0">
+        <div id="donorbox-container">
+          <script src="https://donorbox.org/widget.js" paypalExpress="true"></script> 
+          <iframe src="https://donorbox.org/embed/weareacci?" name="donorbox" allowpaymentrequest="allowpaymentrequest" seamless="seamless" frameborder="0" scrolling="no"   width="100%" style="max-width: 500px; min-height: 650px; min-width: 100%" allow="payment"></iframe>
+         </div>
+      </div>
+      <div class="modal-footer">
+        <small class="text-muted">Thank you for your support!</small>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CSS styles for the modal -->
+<style>
+#donorbox-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.modal-dialog {
+  max-width: 425px;
+}
+
+.modal-content {
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+.modal-header {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding: 1rem 1.5rem;
+}
+
+.modal-footer {
+  border-top: 1px solid rgba(0,0,0,0.1);
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Button to open the modal - add this to your page */
+.donation-button {
+  background-color: #0275d8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.donation-button:hover {
+  background-color: #025aa5;
+}
+</style>
+
+<!-- Example button to trigger the modal -->
+<!-- <button type="button" class="donation-button" >
+  Donate Now
+</button> -->
+
 
 <script>
  // This script adds the close button functionality and improves mobile nav behavior
