@@ -1,25 +1,41 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, NavigationStart, NavigationEnd, NavigationCancel, NavigationError } from '@angular/router';
+import { filter } from 'rxjs/operators';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-loader',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './loader.component.html',
-  styleUrl: './loader.component.css'
+  styleUrls: ['./loader.component.css']
 })
 export class LoaderComponent implements OnInit {
-  isVisible = true;
+  loading = true;
+  private minDisplayTime = 400;
+  private hideTimeout: any;
 
-  constructor() {}
+  constructor(private router: Router) {}
 
-  ngOnInit(): void {}
-
-  show() {
-    this.isVisible = true;
-  }
-
-  hide() {
-    setTimeout(() => {
-      this.isVisible = false;
-    }, 1000); // Match your CSS transition duration
+  ngOnInit() {
+    this.router.events.pipe(
+      filter(event => 
+        event instanceof NavigationStart ||
+        event instanceof NavigationEnd ||
+        event instanceof NavigationCancel ||
+        event instanceof NavigationError
+      )
+    ).subscribe(event => {
+      if (event instanceof NavigationStart) {
+        this.loading = true;
+        if (this.hideTimeout) {
+          clearTimeout(this.hideTimeout);
+        }
+      } else {
+        this.hideTimeout = setTimeout(() => {
+          this.loading = false;
+        }, this.minDisplayTime);
+      }
+    });
   }
 }

@@ -1,5 +1,14 @@
-<div class="loading-wrapper" [class.hidden]="!isVisible">
-  <img src="acci-1.jpg" alt="PCNGi Logo" class="logo-image" />
-  <p class="org-name">Action for Collective Change Initiative (ACCI)</p>
-  <div class="spinner"></div>
+<div class="loading-wrapper" *ngIf="loading">
+  <div class="loading-content">
+    <div class="logo-container">
+      <img src="acci-1.jpg" alt="ACCI Logo" class="logo-image" />
+    </div>
+    <p class="org-name">Action for Collective Change Initiative (ACCI)</p>
+    
+    <div class="spinner-container">
+      <div class="spinner-outer"></div>
+      <div class="spinner-inner"></div>
+      <div class="spinner-dot"></div>
+    </div>
+  </div>
 </div>
