@@ -12,7 +12,7 @@ import { CommonModule } from '@angular/common';
 })
 export class LoaderComponent implements OnInit {
   loading = true;
-  private minDisplayTime = 400;
+  private minDisplayTime = 1000;
   private hideTimeout: any;
 
   constructor(private router: Router) {}
